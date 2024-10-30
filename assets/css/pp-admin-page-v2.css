@@ -1,0 +1,141 @@
+#wpcontent {
+    padding-left: 0 !important;
+	color: #434343 !important;
+}
+
+.pp-admin-page-wrapper {
+  margin: 0;
+}
+
+.pp-admin-notice-area {
+  padding: 0;
+}
+
+.pp-admin-notice-area .notice {
+	margin: 0;
+}
+
+.pp-admin-page-wrapper, 
+.pp-admin-page-header,
+.pp-admin-page-wrapper .tab-navigation {
+  background-color: #E2E2E2;
+}
+
+.rtl .pp-admin-page-header {
+  margin-left: 0;
+}
+
+.pp-admin-page-header nav {
+  margin-right: 24px;
+  text-align: right;
+  line-height: 1;
+  padding-top: 6px;
+}
+
+.rtl .pp-admin-page-header nav {
+  text-align: left;
+  margin-right: 0;
+  margin-left: 24px;
+}
+
+.pp-admin-page-header nav a {
+  display: inline-block;
+  padding: 0 3px;
+  color: #434343;
+  text-decoration: none;
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.pp-admin-page-header nav a span.text {
+  white-space: nowrap;
+  padding-left: 4px;
+}
+
+.rtl .pp-admin-page-header nav a span.text {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+@media only screen and (max-width: 960px) {
+  .pp-admin-page-header nav a {
+    font-size: 36px;
+    padding: 0 12px;
+  }
+  .pp-admin-page-header nav a span.text {
+    display: none;
+  }
+}
+
+.pp-admin-page-title {
+  padding: 12px 24px;
+  color: #434343;
+}	
+
+.pp-admin-page-title h1 {
+  color: #434343;
+  margin: 0;
+  padding: 0;
+}
+
+.pp-admin-page-hide-th th {
+  display: none;
+}
+
+.pp-admin-page-wrapper .toggle {
+  height: 40px;
+  line-height: 40px;
+}
+
+.pp-admin-page-wrapper .toggle input[type="checkbox"] {
+	display: none;
+}
+
+.pp-admin-page-wrapper .toggle input[type="checkbox"] + label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 80px;
+	height: 40px;
+	background: grey;
+	display: block;
+	border-radius: 40px;
+	position: relative;
+  float: left;
+  margin-right: 40px;
+}
+
+.rtl .pp-admin-page-wrapper .toggle input[type="checkbox"] + label {
+  float: right;
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+.pp-admin-page-wrapper .toggle input[type="checkbox"]:disabled + label {
+  background-color: #DDD;
+}
+
+.pp-admin-page-wrapper .toggle input[type="checkbox"] + label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+
+body:not(.rtl) .pp-admin-page-wrapper .toggle input[type="checkbox"] + label:after, .rtl .pp-admin-page-wrapper .toggle input[type="checkbox"]:checked + label:after {
+  left: 5px;
+  transform: none;
+}
+
+.pp-admin-page-wrapper .toggle input[type="checkbox"]:enabled:checked + label {
+  background: #104060;
+}
+
+body:not(.rtl) .pp-admin-page-wrapper .toggle input[type="checkbox"]:checked + label:after, .rtl .pp-admin-page-wrapper .toggle input[type="checkbox"] + label:after {
+  left: calc(100% - 5px);
+	transform: translateX(-100%);
+}

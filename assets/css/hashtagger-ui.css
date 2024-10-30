@@ -1,0 +1,51 @@
+.hashtagger .postbox .inside {
+  margin-top: 20px;
+}
+
+.hashtagger .form-table th, .form-table td {
+  display: block;
+  width: auto;
+}
+
+.hashtagger .form-table th {
+  display: none;
+}
+
+.hashtagger .form-table td {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.hashtagger .form-table td p {
+  padding: 0;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hashtagger select, .hashtagger .regular-text, .hashtagger .regular-textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #104060;
+  border-radius:5px;
+  margin: 5px 0;
+}
+
+.hashtagger select, .hashtagger .regular-text {
+  height: 40px;
+  line-height: 40px;
+}
+
+.hashtagger .regular-textarea {
+  height: 400px;
+  line-height: 24px;
+}
+
+.hashtagger .nav-tab-active, .hashtagger .nav-tab-active:focus, .hashtagger .nav-tab-active:focus:active, .hashtagger .nav-tab-active:hover {
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+
+.pp-admin-page-wrapper .toggle.autoheight {
+  height: auto;
+}
